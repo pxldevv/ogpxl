@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ogpxl</title>
+    <title>pxldevv</title>
+    <link rel="stylesheet" href="./css/loader.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/notify.css">
+
 </head>
+
 <body>
-    <!-- initial commit -->
+    <canvas id="bg"></canvas>
+    <div id="loader">
+        <div class="loader"></div>
+    </div>
+    <div id="site">
+        <div id="main">
+            <div id="profileCard">
+                <img src="" alt="profile picture" id="pfp">
+                <h1 class="username" id="username">ogpxl</h1>
+                <p class="welcome">Welcome!</p>
+                <p class="description">
+                    I am <span class="typer highlighted" id="main" data-words="pxldevv,ogpxl,protonz709" data-delay="100" data-deleteDelay="1000"></span><span class="cursor" data-owner="main"></span>, professional programmer.<br>
+                    I have over 12 years of experience with:
+                </p>
+                <ul class="skills">
+                    <li>Web Development</li>
+                    <li>NodeJS</li>
+                    <li>Discord Moderation</li>
+                    <li>Discord Bot Programming</li>
+                    <li>Raspberry PIs</li>
+                </ul>
+                <button class="discord-button" id="discUsr" onclick="navigator.clipboard.writeText('strcipher');sendNotification('success', 'Copied!');">Discord</button>
+            </div>
+            
+        </main>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+    <script src="./js/notify.js"></script>
+    <script src="./js/typer.js"></script>
+
 </body>
+
 </html>

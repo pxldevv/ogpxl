@@ -23,14 +23,14 @@ fetchGithubUser(owner)
 
         user = fetchedUser;
         document.title = user.name;
-        document.getElementById("username").innerText=user.name;
+        document.getElementById("username").innerText = user.name;
         document.getElementById("pfp").src = user.avatar_url;
 
     })
     .catch(error => {
         console.error("An error occurred:", error.message);
         document.title = "ogpxl";
-        document.getElementById("username").innerText="ogpxl";
+        document.getElementById("username").innerText = "ogpxl";
         document.getElementById("pfp").src = "../assets/pxldevv.png"
     });
 
